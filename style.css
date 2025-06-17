@@ -1,0 +1,36 @@
+.common-text-color{
+    color: #1DD100;
+}
+
+.anton-font {
+  font-family: "Anton", sans-serif;
+}
+
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.cardRight {
+  width: 6.5em;
+  border-left: .18em dashed #ffffff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  &:before,
+  &:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: .9em;
+    height: .9em;
+    background: #ffffff;
+    border-radius: 50%;
+    left: -.5em;
+  }
+  &:before {
+    top: -.4em;
+  }
+  &:after {
+  bottom: -.4em;
+  }
+}
