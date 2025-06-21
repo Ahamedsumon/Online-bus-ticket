@@ -255,8 +255,8 @@
               </div>
               </div>
               <div>
-              <form action="">
-                <label for="name">Passenger Name*</label>
+              <form>
+                <label for="input-name">Passenger Name*</label>
                 <br>
                 <input class="w-full border-gray-200 my-2 p-2 rounded-lg shadow" type="text" name="" id="input-name" placeholder="Enter your name">
                 <br>
@@ -266,7 +266,7 @@
                 <br>
                 <label for="email">Email ID</label>
                 <br>
-                <input class="w-full border-gray-200 my-2 p-2 rounded-lg shadow" type="email" name="" id="email" placeholder="Enter your email id">
+                <input class="w-full border-gray-200 my-2 p-2 rounded-lg shadow" type="email" name="email" id="email" placeholder="Enter your email id">
                 <br>
                 
                 <button id="submit" class="btn w-full bg-[#1DD100FF] text-white p-2 rounded-md mt-5" disabled="disabled">Next</button>
@@ -285,17 +285,16 @@
       <!-- Selecting and Billing Section -->
       
     </main>
-    <div id="success" class="flex justify-center items-center hidden">
-        <div class="flex flex-col text-center">
-            <div class="text-center flex justify-center mb-5">
-              <img src="/images/success.png" alt="">
-            </div>
-            <h3 class="text-3xl font-bold">SUCCESS</h3>
-            <p class="my-1">Thanks for using our online service</p>
-            <p class="text-lg">We are trying to find best service for you</p>
-            <p class="text-xs my-1">you will get confirmation on your email</p>
+    <section id="success" class="flex justify-center items-center h-screen bg-[#F2F1F1FF] hidden">
+        <div class="bg-[#ffffffFF] shadow flex flex-col justify-center items-center p-10 rounded-xl">
+            <div><img src="/images/success.png" alt=""></div>
+            <h2 class="py-5 text-3xl font-bold text-green-500">SUCCESS</h2>
+            <p>Thank you for Booking Our Bus Seats.</p>
+            <p class="py-2">We are working hard to find the best service and deals for you.</p>
+            <p class="pb-4 text-sm text-gray-400">Shortly you will find a confirmation in your email.</p>
+            <button id="continue" class="btn bg-[#1DD100FF] text-white px-20 rounded-3xl">Continue</button>
         </div>
-    </div>
+    </section>
     <footer class="bg-black text-white">
       <div class="flex justify-between max-w-4xl mx-auto pt-20 pb-10 border-b-1 border-dashed">
         <div>

@@ -12,7 +12,7 @@ for (let i = 0; i < buttonsClick.length; i++) {
             const seatsLeft = document.getElementById('seats-left');
             const seatsLeftConvertToNumber = Number(seatsLeft.innerText);
             seatsLeft.innerText = seatsLeftConvertToNumber - 1;
-            console.log(seatsLeftConvertToNumber)
+            
 
 
             buttonsClick[i].style.backgroundColor = 'green';
@@ -94,6 +94,15 @@ inputName.addEventListener('keyup', function(){
         })
     })
     
-})
+});
+
+const continueButton = document.getElementById('continue');
+continueButton.addEventListener('click', function(){
+   const main = document.getElementById('main');
+                main.removeAttribute('class', 'hidden');
+
+   const success = document.getElementById('success');
+                success.setAttribute('class','hidden')
+});
 
 
